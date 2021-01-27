@@ -35,7 +35,7 @@ var server = http.createServer(function(req, res){
   req.on('end', function(){
     buffer += decoder.end();
     // Send the response
-    res.end("Wolrd");
+    res.end("Hello universe");
     // log the request path
     console.log('Request Recieved with this payload: ',buffer);
   });
